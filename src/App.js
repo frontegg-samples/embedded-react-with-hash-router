@@ -4,8 +4,7 @@ import { AdminPortal, useAuth } from "@frontegg/react";
 
 function App() {
   const { user, isAuthenticated } = useAuth();
-
-  // Uncomment this to redirect to login automatically
+  
   useEffect(() => {
     if (!isAuthenticated) {
       window.location.href = "/#/account/login"
